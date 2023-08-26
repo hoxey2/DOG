@@ -1,0 +1,41 @@
+.header {
+    position: fixed;
+    display: flex;
+    z-index: 999;
+    justify-content: space-between  ;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 56.8px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+.logo {
+    width: 11rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding:0 2rem;
+    cursor: pointer;
+    /*텍스트 선택 불가*/
+    -webkit-user-select: none !important; 
+    -moz-user-select: -moz-none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+.logo_text {    
+    font-weight: bold;
+}
+.logo_img {
+    padding-left: 0.7rem;
+    width: 2.5rem ;
+    height: 2.5rem ;
+}
+.buttons {
+    margin-right: 2rem;
+}
+.login_btn_header {
+    background-color: lightgrey;
+    color: black;
+    width: 10rem;
+}

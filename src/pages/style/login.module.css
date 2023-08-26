@@ -1,0 +1,28 @@
+.login_modal {
+    text-align: center;
+}
+.form {
+    padding-top: 12%;
+}
+.login_input {
+    width: 65%;
+    padding-left: 1.5rem;
+}
+.social_icon_style {
+    font-size: 10rem;
+    color: #333
+}
+.login_btn_modal {
+    background-color: lightgrey;
+    color: black;
+    width: 40%;
+    margin-top: 3rem;
+    height: 3.7rem;
+}
+.social_btn_wrap {
+    width: 65%;
+    padding: 3.5rem 0 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}

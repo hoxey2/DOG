@@ -1,0 +1,8 @@
+:root {
+    font-size: 10px;
+}
+.main {
+    margin-top: 57.8px;
+    width: auto;
+    min-height: calc(100vh - 10rem);
+}

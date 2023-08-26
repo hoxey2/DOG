@@ -1,0 +1,24 @@
+.signup {
+    width: 100%;
+    min-height: calc(100vh - 10rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs_title {
+    display: inline-block;
+    width: 12rem;
+}
+.signup_btn_wrap {
+    margin-top: 4.5rem;
+}
+.signup_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    color: black;
+    padding: 1.8rem 0;
+}

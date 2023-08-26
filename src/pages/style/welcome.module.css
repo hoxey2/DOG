@@ -1,0 +1,19 @@
+.welcome {
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.font_logo {
+    font-size: 7rem;
+}
+.start_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BEBEBE;
+    width: 15rem;
+    height: 5rem;
+    margin-top: 3rem;
+}
