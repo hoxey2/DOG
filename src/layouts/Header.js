@@ -98,10 +98,10 @@ export const Header = () => {
                             accountIconFilled? 
                                 <UserOutlined 
                                 style={{
-                                    background : '#1677ff',
+                                    background : '#555',
                                     borderRadius: '50%',
                                     padding: '3px',
-                                    color: 'white'
+                                    color: '#fff'
                                     }}/> : 
                                 <UserOutlined />
                             
