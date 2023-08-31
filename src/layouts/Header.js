@@ -1,6 +1,6 @@
 import style from './style/header.module.css'
-import { Button, Space, Badge} from 'antd';
-import { UserOutlined, CalendarOutlined, CalendarFilled, EditFilled, EditOutlined } from '@ant-design/icons';
+import { Button, Space, Badge, Avatar} from 'antd';
+import { UserOutlined, CalendarOutlined, EditOutlined } from '@ant-design/icons';
 import { Link, useNavigate, useLocation  } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
 import { OPEN_LOGIN } from 'module/loginModalReducer';
@@ -18,6 +18,7 @@ export const Header = () => {
 
     // login state 불러오기
     const IS_LOGIN = useSelector(state => state.loginReducer);
+    const user = useSelector(state => state.userReducer)
     const noteIconFilled = useSelector((state) => state.noteIconReducer)
     const accountIconFilled = useSelector((state) => state.accountIconReducer)
 
@@ -76,7 +77,13 @@ export const Header = () => {
                 <Space>
                     <Button type="text" shape="circle" 
                         size="large" icon={
-                            noteIconFilled ? <EditFilled /> : <EditOutlined/> } 
+                            noteIconFilled ? 
+                            <EditOutlined
+                                style={{
+                                        color: '#1677FF',
+                                    }} 
+                            /> :
+                            <EditOutlined/> } 
                         onClick={() => {
                             gotoNote();
                         }}
@@ -94,17 +101,18 @@ export const Header = () => {
                         onClick={()=> {
                             openAccountDrawer();
                         }}
-                        size="large" icon={
+                        style={{
+                            color: 'rgba(0, 0, 0, 0.88)',
+                        }}
+                        size="large" 
+                        icon={
                             accountIconFilled? 
-                                <UserOutlined 
-                                style={{
-                                    background : '#555',
-                                    borderRadius: '50%',
-                                    padding: '3px',
-                                    color: '#fff'
-                                    }}/> : 
-                                <UserOutlined />
-                            
+                            <UserOutlined 
+                            style={{
+                                    color: '#1677FF',
+                                }} 
+                            /> : 
+                            <UserOutlined />
                         }
                     />
                 </Space> :

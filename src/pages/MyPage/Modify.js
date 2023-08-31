@@ -1,8 +1,10 @@
 import { Button, Form, Input, Space } from "antd";
 import { useSelector } from "react-redux";
+import { useState } from "react";
 
-const MyPage = () => {
+const Modify = () => {
     const user = useSelector(state => state.userReducer)
+    const [nickname, setNickname] = useState(user.nickname)
     return(
         <>
             <div className="main">
@@ -23,10 +25,11 @@ const MyPage = () => {
                             label="닉네임"
                         >   
                             <Space>
-                                <Input/>
+                                <Input
+                                    placeholder={user.nickname}
+                                />
                                 <Button
-                                    onClick={console.log(user)}
-                                >획인</Button>
+                                >확인</Button>
                             </Space>
                         </Form.Item>
                         <Form.Item
@@ -53,4 +56,4 @@ const MyPage = () => {
         </>
     )
 }
-export default MyPage;
+export default Modify;

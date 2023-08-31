@@ -13,7 +13,7 @@ import { CommentOutlined, QuestionCircleOutlined, SolutionOutlined } from '@ant-
 import { FloatButton } from 'antd';
 import QnA from 'pages/QnA';
 import Product from 'pages/Product';
-import MyPage from 'pages/MyPage';
+import MyPage from 'pages/MyPage/MyPage';
 
 export const Layout = () => {
     const isAccountDrawerOpen = useSelector((state) => {
