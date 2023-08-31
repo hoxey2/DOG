@@ -1,6 +1,8 @@
-import { Button, Form, Input } from "antd";
+import { Button, Form, Input, Space } from "antd";
+import { useSelector } from "react-redux";
 
 const MyPage = () => {
+    const user = useSelector(state => state.userReducer)
     return(
         <>
             <div className="main">
@@ -19,8 +21,13 @@ const MyPage = () => {
                     >
                         <Form.Item
                             label="닉네임"
-                        >
-                            <Input/>
+                        >   
+                            <Space>
+                                <Input/>
+                                <Button
+                                    onClick={console.log(user)}
+                                >획인</Button>
+                            </Space>
                         </Form.Item>
                         <Form.Item
                             label="비밀번호"
@@ -30,7 +37,7 @@ const MyPage = () => {
                         </Form.Item>
                         <Form>
                             <Button
-                                htmlType='submit'
+                                // htmlType='submit'
                                 type='text' shape='round'
                                 style={{
                                     backgroundColor: 'lightgrey',
